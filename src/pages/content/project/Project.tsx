@@ -1,7 +1,7 @@
 import tw from 'tailwind-styled-components';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../store';
-import { TabsPropsT } from '../../../types/type';
+import { TabsPropsT, ProjectDataT } from '../../../types/type';
 import { projectData } from '../../../data/content/projectData';
 import ProjectCard from '../../../components/cards/ProjectCard';
 import useScrollAnimation from '../../../hooks/useScrollAnimation';
@@ -58,20 +58,7 @@ function Project({ id, navTabs }: TabsPropsT) {
             }
           </TabMenuList>
           <ProjectComponent>
-            {filterDataList.length <= 0 && projectData.slice(0, 4).map((item, idx) => (
-              <ProjectCard
-                key={idx}
-                name={item.name}
-                title={item.title}
-                subject={item.subject}
-                tag={item.tag}
-              
-                giturl={item.giturl}
-                depoloyurl={item.depoloyurl}
-        
-              />
-            ))}
-            {filterDataList.slice(0, 4).map((item, idx) => (
+            {filterDataList.length <= 0 && projectData.map((item: ProjectDataT, idx) => (
               <ProjectCard
                 key={idx}
                 name={item.name}
@@ -81,7 +68,18 @@ function Project({ id, navTabs }: TabsPropsT) {
                 imgurl={item.imgurl}
                 giturl={item.giturl}
                 depoloyurl={item.depoloyurl}
-                videourl={item.videourl}
+              />
+            ))}
+            {filterDataList.map((item: ProjectDataT, idx) => (
+              <ProjectCard
+                key={idx}
+                name={item.name}
+                title={item.title}
+                subject={item.subject}
+                tag={item.tag}
+                imgurl={item.imgurl}
+                giturl={item.giturl}
+                depoloyurl={item.depoloyurl}
               />
             ))}
           </ProjectComponent>
