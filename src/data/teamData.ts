@@ -1,3 +1,7 @@
+import member1 from '../assets/images/member1.png';
+import member2 from '../assets/images/member2.webp';
+import member3 from '../assets/images/member3.webp';
+
 export interface TeamMember {
   name: string;
   role: string;
@@ -25,7 +29,7 @@ export const teamData: TeamMember[] = [
       DataBase: ["MySQL"],
       Tools: ["Git", "Figma"]
     },
-    image: "src/assets/images/member1.png"
+    image: member1
   },
   {
   name: "김대기",
@@ -38,7 +42,7 @@ export const teamData: TeamMember[] = [
       DataBase: ["MongoDB", "Pinecone"],
       Tools: ["Docker"]
     },
-    image: "src/assets/images/member2.webp",
+    image: member2,
     site: "https://portfolio-9l21.vercel.app/"
   },
   {
@@ -52,7 +56,7 @@ export const teamData: TeamMember[] = [
     Tools: ["GitHub", "Notion"],
     API: ["공공데이터 포털 API", "OpenAI API", "Naver Clova API"],
   },
-    image: "src/assets/images/member3.webp"
+    image: member3
   }
 ];
 
