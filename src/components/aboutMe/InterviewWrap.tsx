@@ -56,15 +56,17 @@ const InterviewWrap = () => {
         <MyMindTxt>
           <SubTit>Q. 이 프로젝트를 하면서 어떤 점을 느꼈나요?</SubTit>
           박준현:  기술적으로도 많이 배웠지만, 그보다 더 크게 느낀 점은 <PointText>사용자를 고려하는 시각</PointText>이 얼마나 중요한지였습니다.<br />
-          처음엔 기능 구현에만 집중했는데, 점차 “사용자가 이걸 쉽게 쓸 수 있을까?”라는 고민을 하게 되면서<br />
+          처음엔 기능 구현에만 집중했는데, 점차 "사용자가 이걸 쉽게 쓸 수 있을까?"라는 고민을 하게 되면서<br />
           앱의 구조나 <PointText>UI/UX</PointText>에 더 신경 쓰게 되었고, 사용자 중심 개발의 본질을 조금은 이해하게 된 계기가 되었습니다.
         </MyMindTxt>
 
         <MyMindTxt>
-          <SubTit>Q. 자기계발을 위해 어떤 것들을 해왔는지?</SubTit>
-          지속적인 학습을 위해 스터디와 온라인 강의에 적극 참여하고, <PointText>낯선 기술에도 포기 하지 않고 메타인지 방식을 활용</PointText>해 문제 해결 능력을 쌓고 있습니다.<br />
-          <BoldText>열린 마음으로 피드백을 소중히 여기고,</BoldText>개발 과정에서 항상 개선할 점을 찾기 위해 노력하고 있습니다.
+          <SubTit>Q. 개발하면서 가장 어려웠던 건요?</SubTit>
+          최성민:  가장 어려웠던 건 여러 명이 함께 작업하다 보니 <PointText>버전 관리가 정말 까다롭더라고요</PointText>.<br />
+          그런데 하다 보니 팀원들끼리 <PointText>역할을 명확히 나누고, 커밋 메시지와 규칙을 정해 정리</PointText>하면서 점점 수월해졌어요.<br />
+          그 과정을 통해 <PointText>협업에 대한 요령</PointText>도 많이 얻었죠.
         </MyMindTxt>
+
       </MyMind>
     </RightContainer>
   );

@@ -1,10 +1,26 @@
-import { project5 } from './projecsDetailDatas/project5';
 import { project6 } from './projecsDetailDatas/project6';
 import { project7 } from './projecsDetailDatas/project7';
 import { project9 } from './projecsDetailDatas/project9';
-import { project11 } from './projecsDetailDatas/project11';
+import { webProjectsCollection } from './projecsDetailDatas/webProjectsCollection';
+import { hallaUniversityTour } from './projecsDetailDatas/hallaUniversityTour';
 
 export const projectData = [
+  {
+    name: webProjectsCollection.name,
+    type: 'single',
+    title: webProjectsCollection.title,
+    subject: webProjectsCollection.subject,
+    tag: webProjectsCollection.tag,
+    depoloyurl: webProjectsCollection.depoloyurl,
+  },
+  {
+    name: hallaUniversityTour.name,
+    type: 'single',
+    title: hallaUniversityTour.title,
+    subject: hallaUniversityTour.subject,
+    tag: hallaUniversityTour.tag,
+    depoloyurl: hallaUniversityTour.depoloyurl,
+  },
   {
     name: project9.name,
     type: 'single',
@@ -28,23 +44,5 @@ export const projectData = [
     subject: '개인화된 인공지능 시스템 개발.',
     tag: project6.tag,
     giturl: project6.giturl,
-  },
-  {
-    name: project5.name,
-    type: 'team',
-    title: project5.title,
-    subject: '한라대학교 관광체험 사이트 입니다.',
-    tag: project5.tag,
-    depoloyurl: project5.depoloyurl,
-  },
-  {
-    name: project11.name,
-    type: 'single',
-    title: project11.title,
-    subject: 'HTML, CSS, JavaScript를 활용한 다양한 웹 프로젝트 모음입니다.',
-    tag: project11.tag,
-    imgurl: project11.imgurl,
-    giturl: project11.giturl,
-    depoloyurl: project11.depoloyurl,
-  },
+  }
 ];
